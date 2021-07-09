@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='resets.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+    <!-- icon -->
+    <link rel="shortcut icon" href="../static/images/icons8-bank-building-48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6f628bdd8a.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav__logo">
+                <img src="../static/images/icons8-bank-building-48.png" alt="banket logo">
+                <p>
+                    Banket
+                </p>
+            </div>
+            <div id="nav__items">
+                <div class="nav__item active">
+                    <a href="/" rel="noopener noreferrer">Home</a>
+                </div>
+                <div class="nav__item">
+                    <a href="/allcustomers" rel="noopener noreferrer">View Customers</a>
+                </div>
+                <div class="nav__item">
+                    <a href="/transferList" rel="noopener noreferrer">Transfer Money</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="firstSection">
+            <div class="box"></div>
+            <div class="main__content">
+                <div class="main__heading">Online banking made easy</div>
+                <div class="main__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sequi illo sapiente perspiciatis
+                    amet
+                    deserunt perferendis. Rerum vel officiis voluptatum?
+                </div>
+                <button>
+                    <a href="http://" rel="noopener noreferrer">Get Started</a>
+                </button>
+            </div>
+            <div class="main__image">
+                <img src="../static/images/undraw_pay_online_b1hk.svg" alt="A main with bank debit or credit card">
+            </div>
+        </section>
+        <section id="secondSection">
+            <div class="main__image">
+                <img src="../static/images/030-drawkit-full-stack-man-monochrome.svg" alt="A main explaining something">
+            </div>
+            <div class="main__content">
+                <span class="special__box" style="width: 7rem;">About Us</span>
+                <div class="main__heading">Welcome To Banket</div>
+                <div id="special__tag">
+                    <span id="line"></span>
+                    <p>
+                        10+ years of experience as a online bank
+                    </p>
+                </div>
+                <div class="main__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloribus et sequi quo a
+                    repudiandae, illo cumque facere, unde, enim minima ipsum qui autem fugit quidem ad error omnis sint
+                    nisi alias aspernatur. Voluptatum perspiciatis iste maxime aut sint tempore recusandae, quae
+                    quisquam, culpa temporibus amet, sit tenetur quasi maiores!
+                </div>
+            </div>
+        </section>
+        <section id="thirdSection">
+            <div id="section__header">
+                <span class="special__box" style="width: 12rem;">What We Excel At</span>
+                <div class="main__heading">
+                    Our Services
+                </div>
+                <div class="main__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, tempore
+                </div>
+            </div>
+            <div id="section__main">
+                <div class="features">
+                    <div class="features__small special__box">1st Feature</div>
+                    <div class="features__icon">
+                        <img src="../static/images/Growth.svg" alt="">
+                    </div>
+                    <div class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem dolor ullam! In,
+                        doloremque totam? Ea, iure! Praesentium perferendis esse quae quisquam libero, eligendi ducimus?
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="features__small special__box">2st Feature</div>
+                    <div class="features__icon">
+                        <img src="../static/images/Mobile Payment.svg" alt="">
+                    </div>
+                    <div class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem dolor ullam! In,
+                        doloremque totam? Ea, iure!
+                        Praesentium perferendis esse quae quisquam libero, eligendi ducimus?
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="features__small special__box">3st Feature</div>
+                    <div class="features__icon">
+                        <img src="../static/images/Teamwork.svg" alt="">
+                    </div>
+                    <div class="features__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem dolor ullam! In,
+                        doloremque totam? Ea, iure!
+                        Praesentium perferendis esse quae quisquam libero, eligendi ducimus?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__div">
+                <div id="footer__logo">
+                    <img src="../static/images/icons8-bank-building-48.png" alt=""> Banket
+                </div>
+                <p>
+                    Perfect Banking Option For Daily Use
+                </p>
+            </div>
+            <div class="footer__div">
+                <div class="footer__text">
+                    Follow Us
+                </div>
+                <div class="footer__icons">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="footer__div">
+                <div class="footer__text">
+                    Call Us On
+                </div>
+                <div class="footer__icons">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    +91 20102 20135
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

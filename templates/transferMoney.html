@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='resets.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='flash.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='transfer.css')}}">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="../static/images/icons8-bank-building-48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6f628bdd8a.js" crossorigin="anonymous"></script>
+    <title>Transfer Money</title>
+</head>
+
+<body>
+    {% for mess in get_flashed_messages() %}
+    <div class="flash-message">
+        <p>{{mess}}</p>
+        <button class="close-btn">OK</button>
+    </div>
+    {% endfor %}
+    <header>
+        <nav>
+            <div id="nav__logo">
+                <img src="../static/images/icons8-bank-building-48.png" alt="banket logo">
+                <p>
+                    Banket
+                </p>
+            </div>
+            <div id="nav__items">
+                <div class="nav__item">
+                    <a href="/" rel="noopener noreferrer">Home</a>
+                </div>
+                <div class="nav__item">
+                    <a href="/allcustomers" rel="noopener noreferrer">View Customers</a>
+                </div>
+                <div class="nav__item active">
+                    <a href="/transferList" rel="noopener noreferrer">Transfer Money</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="transferMoney">
+        <div id="main__side_logo">
+            <img src="../static/images/025-drawkit-server-woman-colour.svg" alt="a woman doing her job">
+        </div>
+        <form action="/transferList" method="POST">
+            <h2>Transfer Money</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div id="form__elements">
+                <label for="Account No">
+                    <p>
+                        Sender Account No
+                    </p>
+                    <input type="text" name='sender_id' id="Account No" required>
+                </label>
+                <label for="Account No">
+                    <p>
+                        Receiver Account No
+                    </p>
+                    <input type="text" name='receiver_id' id="Account No" required>
+                </label>
+                <label for="Amount No">
+                    <p>
+                        Amount
+                    </p>
+                    <input type="text" name='amount' id="Amount No" placeholder="₹" required>
+                </label>
+                <div id="form__action">
+                    <button id="submit-btn" type="submit">
+                        Transfer Money
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="../static/help.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/* flash message */
+.flash-message {
+    width: 60%;
+    height: auto;
+    margin: 1% auto;
+    background-color: #00008b;
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.flash-message p {
+    font-size: 21px;
+    font-weight: 600;
+    padding: 1% 5%;
+    color: var(--white);
+}
+
+.flash-message .close-btn {
+    width: auto;
+    padding: 1% 5%;
+    margin: 0 5%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: var(--black);
+    border-radius: 10px;
+    background-color: var(--white);
+}

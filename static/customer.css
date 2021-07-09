@@ -1,0 +1,81 @@
+#customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#customer h1 {
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--blue);
+    text-align: center;
+}
+
+#customer__card {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-content: flex-start center;
+    grid-gap: 1rem;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px #cfd1d3,
+        -8px -8px 16px #ffffff;
+    padding: 1rem;
+}
+
+#customer__card .customer__logo {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    text-align: center;
+}
+
+#customer__card .customer__logo i {
+    width: 100%;
+    font-size: 6rem;
+    margin: auto 0;
+}
+
+#customer__card .customer__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 1rem;
+    border-left: 0.1rem solid #ccc;
+}
+
+#customer__card .customer__info .small {
+    font-size: 0.9rem;
+    padding: 0 0.2rem;
+    color: #705252;
+}
+
+#customer__card .customer__info .customer__name,
+#customer__card .customer__info .customer__email,
+#customer__card .customer__info .customer__account,
+#customer__card .customer__info .customer__balance {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+    color: var(--black);
+}
+
+#customer__transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+#customer__transactions table {
+    width: 70%;
+    padding: 1rem;
+}

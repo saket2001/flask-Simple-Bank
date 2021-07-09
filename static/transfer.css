@@ -1,0 +1,102 @@
+#transferMoney {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 1rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+
+/* logo */
+
+#main__side_logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    height: 90%;
+}
+
+/* form */
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 11px 18px #eeeeee,
+        -5px -5px 18px #eeeeee;
+}
+
+form h2 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+form p {
+    width: 100%;
+    padding: 0.2rem 1rem;
+}
+
+form #form__elements {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+form #form__elements p {
+    width: 50%;
+    padding: 0;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.1rem 0;
+}
+
+/* text inputs */
+input[type='text'] {
+    width: 50%;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    outline: 0;
+    border: 0.08rem solid #cccc;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+
+}
+
+input[type='text']:focus {
+    border: 0.08rem solid blue;
+}
+
+#form__action {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#submit-btn {
+    width: 60%;
+    padding: 0.4rem 1rem;
+    outline: none;
+    border: 1px solid #00008b;
+    border-radius: 5px;
+    background-color: #00008b;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+#submit-btn:hover,
+#submit-btn:active {
+    transform: translateY(-5px);
+}

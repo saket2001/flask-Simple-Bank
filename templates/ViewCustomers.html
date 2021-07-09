@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='resets.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='allCustomers.css')}}">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="../static/images/icons8-bank-building-48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6f628bdd8a.js" crossorigin="anonymous"></script>
+    <title>Customers</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav__logo">
+                <img src="../static/images/icons8-bank-building-48.png" alt="banket logo">
+                <p>
+                    Banket
+                </p>
+            </div>
+            <div id="nav__items">
+                <div class="nav__item">
+                    <a href="/" rel="noopener noreferrer">Home</a>
+                </div>
+                <div class="nav__item active">
+                    <a href="/allcustomers" rel="noopener noreferrer">View Customers</a>
+                </div>
+                <div class="nav__item">
+                    <a href="/transferList" rel="noopener noreferrer">Transfer Money</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id='all_customers'>
+        <div id="header">
+            <div class="special__box">
+                <blockquote>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    The money you make is a symbol of the value you create
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </blockquote>
+            </div>
+            <h2>Our Customers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam porro debitis.</p>
+
+            <div class="line"></div>
+        </div>
+        <div id="grid">
+            {% for user in userList%}
+            <div class="col">
+                <div class="col__name">{{user[1]}}</div>
+                <div class="col__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="col__id">
+                    <span>Account No-</span>
+                    {{user[0]}}
+                </div>
+                <div class="col__email">{{user[2]}}</div>
+                <div class="col__balance">{{user[3]}} <i class="fas fa-rupee-sign"></i>
+                </div>
+                <div class="col__btn_link">
+                    <button class="viewButton" onclick="window.location.href='/allcustomers/{{user[0]}}'">
+                        View Customer
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <div id="random__box"></div>
+</body>
+
+</html>

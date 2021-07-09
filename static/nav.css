@@ -1,0 +1,51 @@
+/* header */
+header {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+nav #nav__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav #nav__logo p {
+    font-size: 1.4rem;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+nav #nav__items {
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 0.7rem;
+}
+
+nav #nav__items .nav__item {
+    padding: 0.5rem;
+}
+
+nav #nav__items .nav__item a {
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    margin: 0 0.5rem;
+    color: #3f3b3b;
+    transition: all 0.3s ease;
+}
+
+nav #nav__items .nav__item a:hover {
+    border-bottom: 0.2rem solid var(--blue);
+}
+
+.active>a {
+    border-bottom: 0.2rem solid var(--blue);
+}
